@@ -34,8 +34,16 @@ a{
 .container{
     max-width: 1000px;
     width: 100%;
-    margin: 1em auto;
-
+    margin: 0 auto;
+}
+.container h1{
+    margin: 1em;
+    text-align: center;
+    color: #f6982d;
+}
+.container form{
+    max-width: 500px;
+    margin: 0 auto;
 }
 /*END CONTAINER*/
 /*FORM CONTROL*/
@@ -49,6 +57,7 @@ a{
 .form-control label{
     font-weight: bold;
     margin-bottom: .5em;
+    color: #8a4d07;
 }
 .form-control input, .form-control textarea{
     padding: 7px;
@@ -67,24 +76,11 @@ form input[type='submit'], .btn{
     cursor: pointer;
     text-decoration: none;
     transition: .5s;
+    width: 40%;
 }
+
 form input[type='submit']:hover, .btn:hover{
     background-color: #f6982d;
     color: #fff;
 }
 /*END FORM CONTROL*/
-/*CREATE CONTAINER*/
-.create-container{
-    max-width: 800px;
-    width: 95%;
-    margin: 0 auto;
-}
-.create-container h1{
-    text-align: center;
-    margin: 1em 0;
-}
-.create-container input[type='submit']{
-    margin: 1em 40%;
-}
-
-/*END CREATE CONTAINER*/
