@@ -7,4 +7,10 @@ module.exports = class ProductController{
     static createProduct(req, res){
         res.render('products/create')
     }
+    static async createProductPost(req, res){
+        const {name, price, description} = req.body
+        const product = new Product(name, price, description);
+        product.save();
+        res.redirect('/products');
+    }
 }

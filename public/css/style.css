@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    color: currentColor;
+}
 /*NAVBAR*/
 
 #navbar{
@@ -27,4 +30,61 @@
 }
 
 /*END NAVBAR*/
+/*CONTAINER*/
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 1em auto;
 
+}
+/*END CONTAINER*/
+/*FORM CONTROL*/
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto 1em;
+    max-width: 450px;
+    width: 98%;
+}
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+.form-control input, .form-control textarea{
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #f6982d;
+}
+form input[type='submit'], .btn{
+    background-color: transparent;
+    color: #f6982d;
+    border: 2px solid #f6982d;
+    padding: .5em 1.2em;
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+form input[type='submit']:hover, .btn:hover{
+    background-color: #f6982d;
+    color: #fff;
+}
+/*END FORM CONTROL*/
+/*CREATE CONTAINER*/
+.create-container{
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+}
+.create-container h1{
+    text-align: center;
+    margin: 1em 0;
+}
+.create-container input[type='submit']{
+    margin: 1em 40%;
+}
+
+/*END CREATE CONTAINER*/
