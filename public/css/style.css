@@ -84,3 +84,40 @@ form input[type='submit']:hover, .btn:hover{
     color: #fff;
 }
 /*END FORM CONTROL*/
+/*ALL*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 5px;
+    border: 2px solid #8a4d07;
+}
+.product img{
+    max-width: 100%;
+    margin-bottom: .5em;
+    height: 60%;
+    background-size: cover;
+}
+.product h3{
+    padding-top: .5em;
+    border-top: 2px solid #f6982d;
+    margin-bottom: 1em;
+}
+.actions{
+    margin: .5em;
+}
+/*END ALL*/
+/*PRODUCT PAGE*/
+.product-page img{
+    max-width: 250px;
+    margin-bottom: 1em;
+}
+.product-page p{
+    margin: 1em;
+}
+/*END PRODUCT PAGE*/
