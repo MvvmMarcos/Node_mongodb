@@ -76,7 +76,7 @@ form input[type='submit'], .btn{
     cursor: pointer;
     text-decoration: none;
     transition: .5s;
-    width: 40%;
+    width: 35%;
 }
 
 form input[type='submit']:hover, .btn:hover{
@@ -110,6 +110,19 @@ form input[type='submit']:hover, .btn:hover{
 }
 .actions{
     margin: .5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.actions a{
+    width: 100px;
+}
+.actions form{
+    margin: 0;
+    width: 100%;
+    margin-left: .5em;
 }
 /*END ALL*/
 /*PRODUCT PAGE*/

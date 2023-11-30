@@ -19,4 +19,25 @@ module.exports = class ProductController{
         const product = await Product.getProductById(id);
         res.render('products/product',{product})
     }
+    static async removeProduct(req, res){
+        const id = req.params.id;
+       try {
+        await Product.removeProduct(id);
+        res.redirect('/products');
+       } catch (error) {
+        console.log(error)
+       }
+    }
+    static async editProduct(req, res){
+        const id = req.params.id;
+        //fazer as validações
+       const product = await Product.getProductById(id);
+       res.render('products/edit', {product});
+    }
+    static async updateProduct(req, res){
+        const {id, name, image, price, description} = req.body;
+        const product = new Product(name, image, price, description);
+        await product.updateProduct(id);
+        res.redirect('/products');
+    }
 }

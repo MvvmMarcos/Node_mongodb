@@ -25,5 +25,13 @@ class Product{
         const product = await conn.db().collection('products').findOne({_id: new ObjectId(id)});
         return product;
     }
+    static async removeProduct(id){
+        await conn.db().collection('products').deleteOne({_id:new ObjectId(id)});
+        return;
+    }
+    updateProduct(id){
+        conn.db().collection('products').updateOne({_id: new ObjectId(id)},{$set:this})
+        return;
+    }
 }
 module.exports = Product;
